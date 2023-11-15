@@ -6,6 +6,9 @@
     <title>bootstrap dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -38,36 +41,237 @@
     <!-- main -->
     <main>
       <div class="container-main"> 
-        <div class="sidebar">
+        <div class="sidebar d-flex flex-column justify-content-between font-size-10">
+            <ul class="mt-4 ps-1">
+                <li><i class="pe-3 fa-solid fa-house" style="color: #ffffff;"></i><span class="d-none d-lg-inline-block"> Home</span></li>
+                <li><i class="pe-3 fa-solid fa-chart-simple" style="color: #ffffff;"></i><span class="d-none d-lg-inline-block ps-1"> Stats</span></li>
+                <li><i class="pe-3 fa-solid fa-signal" style="color: #ffffff;"></i><span class="d-none d-lg-inline-block"> Signals</span></li>
+            </ul>
 
+            <div class="text-white fw-bold  mb-2"><i class="pe-3 fa-solid fa-gear" style="color: #ffffff;"></i><span class="d-none d-lg-inline-block"> Admin</span></div>
         </div>
-        <div class="container-d">
-            <div class="container-fluid">
-                <div class="row bg-lightblue">
-                    <div class="col-12 col-lg-4">
-                        <div class="content"></div>
+        <div class="container-d overflow-main">
+            <div class="container-fluid font-size-10">
+                <div class="row bg-1B72E8 d-flex flex-wrap">
+                    <div class="col-12 col-lg-6 order-2">
+                        <div class="content-boolean py-2">
+                            <span class="fs-3 text-white"> Boolean </span><span class="badge rounded-pill bg-label">Piano blaze</span>
+                            <div>
+                               <span class="badge rounded-pill bg-label ">3 app</span>
+                               <span class="text-white fw-bolds">>></span>
+                               <span class="badge rounded-pill bg-label">Boolean mobile app</span>
+                               <span class="badge rounded-pill bg-label">Boolean mobile app</span>
+                               <span class="badge rounded-pill bg-label">Boolean mobile app</span>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="content"></div>
+                    <div class="col-12 col-lg-4 order-3">
+                        <div class="text-white py-2"> 
+                            <div> Studenti online negli ultimi 30 minuti</div>
+                            <div class="fs-3">125</div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="content"></div>
+                    <div class="col-12 col-lg-2 order-lg-3">
+                        <div >
+                            <div class="text-white py-2"><span class="p-1">Nuovo Studente</span> <button class="btn border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row bg-lightgray">
-                    <div class="col-12 col-lg-8">
-                        <div class="content"></div>
+                    <div class="col-12 col-lg-8 mt-2">
+                    <div class="col-12">
+                        <div >
+                            <div class="card font-size-10">
+                                <div class="card-header width-100 ">
+                                  Prossime classi
+                                </div>
+                                <div class="card-body m-0 overflow-tab">
+                                    <table class="table">
+                                        <thead>
+                                          <tr class="width-100"> 
+                                            <th class="width-50px" scope="col">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="width-50px">Classe 75</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 76</td>
+                                            <td>16 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 77</td>
+                                            <td>17 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-warning text-white">Process</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          <tr>
+                                            <td class="width-50px">Classe 78</td>
+                                            <td>18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 79</td>
+                                            <td>19 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Falled</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 80</td>
+                                            <td>20 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 81</td>
+                                            <td >21 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Falled</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="width-50px">Classe 82</td>
+                                            <td >22 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td><button class="button-tab"><i class="fa-solid fa-pencil" style="color: #ababab;"></i></button> <button class="button-tab"><i class="fa-solid fa-trash" style="color: #b0b0b0;"></i></button></td>
+                                          </tr>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="content"></div>
+                    <div class="col-12">
+                        <div class="card m-0 mt-3 font-size-10">
+                            <div class="card-header width-100">
+                              F.A.Q
+                            </div>
+                            <ul class="list-group list-group-flush m-1">
+                                <li class="list-group-item m-1 m-1">
+                                 <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                           <button class="accordion-button p-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                             <p class="font-size-10 m-0">Come aggiungere un nuovo studente?</p>
+                                           </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                </li>
+                                <li class="list-group-item m-1">
+                                    <div class="accordion" id="accordionExample">
+                                       <div class="accordion-item">
+                                           <h2 class="accordion-header">
+                                              <button class="accordion-button p-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
+                                               <p class="font-size-10 m-0">Come posso accedere alle informazioni del mio account?</p>
+                                              </button>
+                                           </h2>
+                                           <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                               <div class="accordion-body">
+                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                               </div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item m-1">
+                                    <div class="accordion" id="accordionExample">
+                                       <div class="accordion-item">
+                                           <h2 class="accordion-header">
+                                              <button class="accordion-button p-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapseOne">
+                                               <p class="font-size-10 m-0">Posso usare questa dashboard da mobile?</p>
+                                              </button>
+                                           </h2>
+                                           <div id="collapsethree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                               <div class="accordion-body">
+                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                               </div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          </div>
+                            
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="content"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="col-12">
+                        <div>
+                            <div class="card mt-2">
+                                <div class="card-header width-100">
+                                  Todo
+                                </div>
+                                <div class="card m-2 font-size-10">
+                                    <ul class="list-group list-group-flush m-0">
+                                      <li class="list-group-item m-0">
+                                        <input type="checkbox" id="check" name="check">
+                                        <label for="check"> Kickoff nuove classi</label>
+                                      <li class="list-group-item m-0">
+                                        <input type="checkbox" id="check" name="check">
+                                        <label for="check"> Lezione su bootstrap 5 in classe #75</label>
+                                      </li>
+                                      <li class="list-group-item m-0">
+                                        <input type="checkbox" id="check" name="check">
+                                        <label for="check"> Controllare Username github studenti</label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                 
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="content"></div>
+                    <div class="col-12">
+                        <div>
+                            <div class="card mt-2">
+                                <div class="card m-2 font-size-10">
+                                    <ul class="list-group m-0">
+                                      <li class="list-group-item m-0">
+                                        <img class="width-80" src="./img/stats.jpeg" alt="">
+                                        <div>Utenti attivi</div>
+                                        <div class="font-size-8">Lista degli utenti attivi in piattaforma nell'ultimo mese</div>
+                                      <li class="list-group-item m-0">
+                                       <div>Gennaio: 1200</div>
+                                      </li>
+                                      <li class="list-group-item m-0">
+                                        <div>Febbraio: 800</div>
+                                      </li>
+                                      <li class="list-group-item m-0">
+                                        <div>Marzo: 1500</div>
+                                      </li>
+                                      <li class="list-group-item m-0">
+                                        <div><a href="#">Visualizza report approfondito</a></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                 
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,6 +279,17 @@
 
         </div> 
       </div>
+      
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
 </body>

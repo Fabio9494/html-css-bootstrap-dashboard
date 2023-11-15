@@ -5,9 +5,17 @@
 }
 
 
+
 header{
     width: 100%;
-    display: flex; 
+    display: flex;
+    height: 50px; 
+    position: fixed;
+    background-color: white;
+}
+
+main{
+    padding-top: 50px;
 }
 
 img{
@@ -15,19 +23,67 @@ img{
 }
 
 .logo-small{
-    width: 50px;
+    width: 80%;
 }
 
 .sidebar{
-    width: 500px;
-    background-color: blue;
-    height: calc(100vh - 200px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgb(5, 30, 52);
+    height: calc(100vh - 50px);
+    width: 10%;
+}
+
+.font-size-10{
+    font-size: 10px;
+}
+
+.font-size-8{
+    font-size: 8px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-80{
+    width: 100%;
+   
+}
+
+
+.width-50px{
+    width: 300px;
+}
+
+.overflow-tab{
+    overflow-y: auto;
+    height: 150px;
+}
+
+.overflow-main{
+    overflow-y: auto;
+}
+
+.button-tab{
+    padding: 2px 5px;
+    border: solid gray 1px ;
+    border-radius: 20%;
+}
+
+ul{
+    list-style: none;
+    font-weight: bold;
+    color: white;
+    padding-left: 2px;
+}
+
+li{
+    padding: 10px 0;
 }
 
 .container-d{
-background-color: yellow;
-width: calc(100vw - 500px);
-height: calc(100vh - 200px);
+width: 90%;
+height: calc(100vh - 50px);
 }
 
 .container-main{
@@ -39,11 +95,11 @@ height: calc(100vh - 200px);
     border: solid 3px black;
 }
 
-.bg-lightblue{
-    background-color: lightblue;
+.bg-1B72E8{
+    background-color: #1B72E8;
 }
 
-.bg-lightgray{
-    background-color: lightgray;
+.bg-label{
+    background-color: #165BBA;
 }
 
